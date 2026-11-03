@@ -1,4 +1,4 @@
-# IdőképBot – Robotika klub weboldala
+# IdőképBot – Időjárás elemző weboldala
 
 Iskolai II. projekt (10.C 2F, 2026.11.03.). A klub mérőállomást épít, az oldal magyarországi időképet mutat (jelenleg példaadatokkal).
 
