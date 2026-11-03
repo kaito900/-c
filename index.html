@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="IdőképBot: a robotika klub magyarországi időkép-oldala saját építésű mérőállomással.">
+  <title>IdőképBot – Magyarország időképe | Robotika klub</title>
+  <link rel="stylesheet" href="fontawesome/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<a class="ugras" href="#tartalom">Ugrás a tartalomra</a>
+
+<header class="fejlec">
+  <a class="logo" href="#bemutatkozas"><i class="fa-solid fa-cloud-sun"></i><span>Idő<b>Kép</b>Bot</span></a>
+  <nav aria-label="Főmenü">
+    <ul class="menu">
+      <li><a href="#bemutatkozas"><i class="fa-solid fa-robot"></i> Bemutatkozás</a></li>
+      <li><a href="#idokep"><i class="fa-solid fa-map-location-dot"></i> Időkép</a></li>
+      <li><a href="#elorejelzes"><i class="fa-solid fa-calendar-week"></i> Előrejelzés</a></li>
+      <li><a href="#programok"><i class="fa-solid fa-calendar-days"></i> Programok</a></li>
+      <li><a href="#gyik"><i class="fa-solid fa-circle-question"></i> GYIK</a></li>
+      <li><a href="#kapcsolat"><i class="fa-solid fa-envelope"></i> Kapcsolat</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="tartalom">
+
+  <section id="bemutatkozas" class="hero">
+    <div class="hero-szoveg">
+      <p class="felirat"><i class="fa-solid fa-satellite-dish"></i> Iskolai robotika klub · 10.C</p>
+      <h1>Magyarország időképe, <span>saját építésű mérőállomással</span></h1>
+      <p>A klubunk tagjai szenzorokból és mikrovezérlőből építenek időjárás-állomást. A mért adatokból készül ez az oldal: hőmérséklet, páratartalom, szél és csapadék, városonként és napról napra.</p>
+      <ul class="jelvenyek">
+        <li><i class="fa-solid fa-microchip"></i> Szenzorok</li>
+        <li><i class="fa-solid fa-code"></i> Programozás</li>
+        <li><i class="fa-solid fa-chart-line"></i> Adatelemzés</li>
+        <li><i class="fa-solid fa-users"></i> Csapatmunka</li>
+      </ul>
+    </div>
+    <aside class="fo-kartya" aria-label="Aktuális időjárás Budapesten">
+      <p class="fo-hely"><i class="fa-solid fa-location-dot"></i> Budapest · most</p>
+      <p class="fo-ho"><i class="fa-solid fa-cloud-sun"></i> 9 °C</p>
+      <p class="fo-leiras">Változóan felhős, mérsékelt szél</p>
+      <ul class="fo-reszletek">
+        <li><i class="fa-solid fa-droplet"></i><span>Páratartalom</span><b>78%</b></li>
+        <li><i class="fa-solid fa-wind"></i><span>Szél</span><b>14 km/h</b></li>
+        <li><i class="fa-solid fa-gauge-high"></i><span>Légnyomás</span><b>1018 hPa</b></li>
+        <li><i class="fa-solid fa-eye"></i><span>Látótávolság</span><b>10 km</b></li>
+      </ul>
+    </aside>
+  </section>
+
+  <section class="statisztika" aria-label="A projekt számokban">
+    <div><i class="fa-solid fa-tower-broadcast"></i><b>1</b><span>mérőállomás</span></div>
+    <div><i class="fa-solid fa-city"></i><b>6</b><span>város az oldalon</span></div>
+    <div><i class="fa-solid fa-sliders"></i><b>4</b><span>mért adat</span></div>
+    <div><i class="fa-solid fa-user-group"></i><b>2</b><span>fejlesztő</span></div>
+  </section>
+
+  <section id="idokep" class="szakasz">
+    <div class="cim">
+      <h2><i class="fa-solid fa-temperature-half"></i> Magyarország időképe</h2>
+      <p class="megjegyzes"><i class="fa-solid fa-circle-info"></i> Példaadatok. A kész mérőállomás adatai később kerülnek ide.</p>
+    </div>
+    <div class="kartyak varos-racs">
+      <article class="kartya varos hideg">
+        <header><h3>Debrecen</h3><i class="fa-solid fa-cloud-rain ikon"></i></header>
+        <p class="ho">7 °C</p>
+        <p class="allapot">Eső</p>
+        <ul><li><i class="fa-solid fa-droplet"></i> 85%</li><li><i class="fa-solid fa-wind"></i> 10 km/h</li></ul>
+      </article>
+      <article class="kartya varos enyhe">
+        <header><h3>Budapest</h3><i class="fa-solid fa-cloud-sun ikon"></i></header>
+        <p class="ho">9 °C</p>
+        <p class="allapot">Változóan felhős</p>
+        <ul><li><i class="fa-solid fa-droplet"></i> 78%</li><li><i class="fa-solid fa-wind"></i> 14 km/h</li></ul>
+      </article>
+      <article class="kartya varos meleg">
+        <header><h3>Szeged</h3><i class="fa-solid fa-sun ikon"></i></header>
+        <p class="ho">12 °C</p>
+        <p class="allapot">Napos</p>
+        <ul><li><i class="fa-solid fa-droplet"></i> 66%</li><li><i class="fa-solid fa-wind"></i> 8 km/h</li></ul>
+      </article>
+      <article class="kartya varos hideg">
+        <header><h3>Győr</h3><i class="fa-solid fa-smog ikon"></i></header>
+        <p class="ho">8 °C</p>
+        <p class="allapot">Párás, ködös</p>
+        <ul><li><i class="fa-solid fa-droplet"></i> 90%</li><li><i class="fa-solid fa-wind"></i> 6 km/h</li></ul>
+      </article>
+      <article class="kartya varos meleg">
+        <header><h3>Pécs</h3><i class="fa-solid fa-cloud-sun ikon"></i></header>
+        <p class="ho">11 °C</p>
+        <p class="allapot">Gyengén felhős</p>
+        <ul><li><i class="fa-solid fa-droplet"></i> 72%</li><li><i class="fa-solid fa-wind"></i> 12 km/h</li></ul>
+      </article>
+      <article class="kartya varos enyhe">
+        <header><h3>Veszprém</h3><i class="fa-solid fa-cloud ikon"></i></header>
+        <p class="ho">8 °C</p>
+        <p class="allapot">Borult</p>
+        <ul><li><i class="fa-solid fa-droplet"></i> 80%</li><li><i class="fa-solid fa-wind"></i> 16 km/h</li></ul>
+      </article>
+    </div>
+    <p class="jelmagyarazat"><span class="pont hideg"></span> hűvös (8 °C alatt) <span class="pont enyhe"></span> enyhe (8–10 °C) <span class="pont meleg"></span> kellemes (10 °C felett)</p>
+  </section>
+
+  <section id="elorejelzes" class="szakasz">
+    <div class="cim">
+      <h2><i class="fa-solid fa-calendar-week"></i> 5 napos előrejelzés</h2>
+      <p class="megjegyzes"><i class="fa-solid fa-circle-info"></i> Budapest, példaadatok.</p>
+    </div>
+    <div class="elorejelzes-sor">
+      <article class="nap"><h3>Szerda</h3><i class="fa-solid fa-cloud-sun"></i><p class="max">10 °C</p><p class="min">4 °C</p></article>
+      <article class="nap"><h3>Csütörtök</h3><i class="fa-solid fa-cloud-rain"></i><p class="max">8 °C</p><p class="min">5 °C</p></article>
+      <article class="nap"><h3>Péntek</h3><i class="fa-solid fa-cloud-showers-heavy"></i><p class="max">7 °C</p><p class="min">3 °C</p></article>
+      <article class="nap"><h3>Szombat</h3><i class="fa-solid fa-cloud"></i><p class="max">9 °C</p><p class="min">2 °C</p></article>
+      <article class="nap"><h3>Vasárnap</h3><i class="fa-solid fa-sun"></i><p class="max">12 °C</p><p class="min">3 °C</p></article>
+    </div>
+    <aside class="figyelmeztetes">
+      <i class="fa-solid fa-triangle-exclamation"></i>
+      <div><h3>Figyelmeztetés (példa)</h3><p>Pénteken a Dunántúlon átmenetileg erősödhet a szél, és tartós eső is lehet. Utazás előtt érdemes ellenőrizni az előrejelzést.</p></div>
+    </aside>
+  </section>
+
+  <section id="programok" class="szakasz">
+    <div class="cim"><h2><i class="fa-solid fa-calendar-days"></i> Programjaink</h2></div>
+    <div class="kartyak program-racs">
+      <article class="kartya program">
+        <span class="szam">1</span>
+        <h3>Mérőállomás összeszerelése</h3>
+        <p class="idopont"><i class="fa-regular fa-clock"></i> 2026. november 17., 14:30</p>
+        <p>Összekötjük a hőmérséklet- és páratartalom-érzékelőt a vezérlőpanellel, és kipróbáljuk az első mérést.</p>
+      </article>
+      <article class="kartya program">
+        <span class="szam">2</span>
+        <h3>Adatok megjelenítése</h3>
+        <p class="idopont"><i class="fa-regular fa-clock"></i> 2026. november 24., 14:30</p>
+        <p>A mért adatokat táblázatba és egyszerű diagramba rendezzük, hogy a weboldalon látszódjanak.</p>
+      </article>
+      <article class="kartya program">
+        <span class="szam">3</span>
+        <h3>Időjárás-előrejelző verseny</h3>
+        <p class="idopont"><i class="fa-regular fa-clock"></i> 2026. december 1., 14:30</p>
+        <p>Csapatokban tippelünk a másnapi időjárásra, és megnézzük, melyik csapat járt közelebb a valósághoz.</p>
+      </article>
+    </div>
+  </section>
+
+  <section id="gyik" class="szakasz">
+    <div class="cim"><h2><i class="fa-solid fa-circle-question"></i> Gyakori kérdések</h2></div>
+    <div class="gyik-lista">
+      <details>
+        <summary>Kell programozni tudnom a csatlakozáshoz?</summary>
+        <p>Nem. Az első alkalmakon az alapokat is átvesszük, a tapasztaltabb tagok segítenek.</p>
+      </details>
+      <details>
+        <summary>Valódi adatokat mutat az oldal?</summary>
+        <p>Egyelőre példaadatokat. A mérőállomás elkészülte után a saját méréseink kerülnek ide.</p>
+      </details>
+      <details>
+        <summary>Mit mér az állomás?</summary>
+        <p>Hőmérsékletet, páratartalmat, légnyomást és szélsebességet.</p>
+      </details>
+    </div>
+  </section>
+
+  <section id="kapcsolat" class="szakasz">
+    <div class="cim"><h2><i class="fa-solid fa-envelope"></i> Kapcsolat</h2></div>
+    <ul class="elerhetoseg">
+      <li><i class="fa-solid fa-location-dot"></i><div><b>Helyszín</b><span>Iskolai informatikai labor</span></div></li>
+      <li><i class="fa-solid fa-envelope"></i><div><b>E-mail</b><span>robotika.klub@pelda.hu</span></div></li>
+      <li><i class="fa-solid fa-user"></i><div><b>Klubvezető</b><span>Minta Tanár Úr</span></div></li>
+      <li><i class="fa-regular fa-clock"></i><div><b>Alkalmak</b><span>Kedden 14:30-tól</span></div></li>
+    </ul>
+  </section>
+
+</main>
+
+<footer class="lablec">
+  <p class="lablec-logo"><i class="fa-solid fa-cloud-sun"></i> IdőképBot</p>
+  <p>© 2026 Robotika klub · 10.C · Készítette: Név1 és Név2</p>
+  <p><a href="#bemutatkozas"><i class="fa-solid fa-arrow-up"></i> Vissza a tetejére</a></p>
+</footer>
+
+</body>
+</html>

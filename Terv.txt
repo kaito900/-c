@@ -1,0 +1,62 @@
+TERV – Iskolai klub weboldala (II. projekt)
+Klub: Robotika klub – "IdőképBot" (magyarországi időkép)
+Készítők: Név1 és Név2 · 10.C 2F · 2026.11.03.
+
+1. ÖT TESZTELHETŐ KÖVETELMÉNY
+K1. A menü minden linkje a megfelelő szakaszra ugrik.
+    Teszt: kattintás mind a 6 menüpontra, a megfelelő szakasz fejléce jelenik meg.
+K2. A Programok szakaszban pontosan 3 program van, mindegyiknek cím, időpont és leírás.
+    Teszt: megszámolni a kártyákat, és mindegyiken ellenőrizni a három adatot.
+K3. Az oldal 360 px szélességen sem görgethető vízszintesen.
+    Teszt: böngésző fejlesztői eszközében 360 px-re állítani, nincs vízszintes görgetősáv.
+K4. A stílus külön style.css fájlban van, az index.html-ben nincs style attribútum vagy <style> blokk.
+    Teszt: kódolvasás, keresés a "style" szóra az index.html-ben.
+K5. A Kapcsolat szakaszban legalább helyszín és e-mail-cím szerepel.
+    Teszt: megnyitni az oldalt, a szakaszban mindkét adat látszik.
+
+2. VÁZLAT – MOBIL NÉZET (egy oszlop)
++------------------+
+| FEJLÉC + MENÜ    |
+| (2x2 gomb)       |
++------------------+
+| BEMUTATKOZÁS     |
++------------------+
+| IDŐKÉP kártya 1  |
+| IDŐKÉP kártya 2  |
+| ... (6 város)    |
++------------------+
+| PROGRAM 1        |
+| PROGRAM 2        |
+| PROGRAM 3        |
++------------------+
+| KAPCSOLAT        |
++------------------+
+| LÁBLÉC           |
++------------------+
+
+3. VÁZLAT – ASZTALI NÉZET
++--------------------------------------------------+
+| LOGÓ                 Menü: Bem. Időkép Prog. Kapc.|
++--------------------------------------------------+
+| BEMUTATKOZÁS (széles sáv)                        |
++--------------------------------------------------+
+| IDŐKÉP:  [kártya] [kártya] [kártya]              |
+|          [kártya] [kártya] [kártya]              |
++--------------------------------------------------+
+| PROGRAMOK: [program 1] [program 2] [program 3]   |
++--------------------------------------------------+
+| KAPCSOLAT                                        |
++--------------------------------------------------+
+| LÁBLÉC                                           |
++--------------------------------------------------+
+
+4. FELADATMEGOSZTÁS (felelős – készültségi feltétel)
+- HTML-váz, szakaszok, menü – Név1 – mind a 6 menülink működik
+- style.css, mobil elrendezés – Név2 – 360 px-en nincs vízszintes görgetés
+- Programkártyák (3 db) – Név1 – cím, időpont, leírás mindegyiken
+- Időkép-kártyák – Név2 – 6 város adattal
+- Terv.txt és README – Név1 és Név2 – minden kért pont kitöltve
+- Kölcsönös ellenőrzés – a másik fél – megnyitás, tesztek lefuttatása, javításlista
+
+5. MÉRFÖLDKÖVEK
+1. alkalom: terv és váz · 2. alkalom: tartalom és teszt · 3. alkalom: javítás, bemutató, egyéni magyarázat.
