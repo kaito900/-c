@@ -1,4 +1,4 @@
-# IdőképBot – Időjárás elemző weboldala
+# IdőképHét – Időjárás elemző weboldala
 
 Iskolai II. projekt (10.C 2F, 2026.11.03.). A klub mérőállomást épít, az oldal magyarországi időképet mutat (jelenleg példaadatokkal).
 
@@ -18,3 +18,6 @@ Nyisd meg az `index.html` fájlt egy böngészőben. Telepítés nem kell.
 
 ## Git
 Egy kipróbált módosítás után: `git add .` majd `git commit -m "rövid leírás"`.
+
+## PPT Craft Craft
+Megcsinálni a `Power Point Microsoft-on` megcsinálni egy PPT-t.
